@@ -14,6 +14,58 @@ body {
     
     color: #333;
 } 
+@font-face {
+    font-family: 'Mont';
+    src: url('fonts/Mont-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('fonts/Acumin-BdItPro.otf') format('opentype');
+    font-weight: 900; 
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-SemiBold.otf') format('opentype');
+    font-weight: 600; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('fonts/Mont-Heavy.otf') format('opentype');
+    font-weight: 900; /* Typically heavy is 900 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Regular.otf') format('opentype');
+    font-weight: 400; /* Regular is typically 400 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Light.otf') format('opentype');
+    font-weight: 300; /* Light is typically 300 */
+    font-style: normal;
+}
+/* MONT BOLD */
+.nav-links li a{
+    font-family: 'Mont', Arial, sans-serif;
+    font-weight: bold;
+}
+/* ACUMIN VARIABLE CONCEPT */
+strong,p{
+    font-family: 'Acumin Variable Concept', Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
 .container {
     /* max-width: 1200px; */
     max-width: 100%;

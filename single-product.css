@@ -19,6 +19,67 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
+@font-face {
+    font-family: 'Mont';
+    src: url('fonts/Mont-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('fonts/Acumin-BdItPro.otf') format('opentype');
+    font-weight: 900; 
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-SemiBold.otf') format('opentype');
+    font-weight: 600; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('fonts/Mont-Heavy.otf') format('opentype');
+    font-weight: 900; /* Typically heavy is 900 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Regular.otf') format('opentype');
+    font-weight: 400; /* Regular is typically 400 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Light.otf') format('opentype');
+    font-weight: 300; /* Light is typically 300 */
+    font-style: normal;
+}
+/* MONT BOLD */
+.nav-links li a{
+    font-family: 'Mont', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* MONT REGULAR */
+p{
+    font-family: 'Mont', Arial, sans-serif; /* Fallback to Arial and sans-serif */
+    font-weight: 400; /* Default to Mont Regular */
+}
+
+/* ACUMIN VARIABLE CONCEPT */
+h3{
+    font-family: 'Acumin Variable Concept', Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
 header {
     color: #000000;
     padding: 15px 0;
@@ -46,7 +107,7 @@ nav {
     margin-top: 40px; 
 }
 .nav-links li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 11px;
@@ -146,6 +207,7 @@ nav {
 
 .order-button {
     display: flex;
+    font-weight: bolder;
     align-items: center;
     padding: 10px 20px;
     color: #000000;
