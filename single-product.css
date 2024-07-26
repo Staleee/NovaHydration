@@ -46,12 +46,35 @@ nav {
     margin-top: 40px; 
 }
 .nav-links li a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 11px;
     display: flex;
     align-items: center;
+    padding: 5px 0; 
+    transition: color 0.3s, transform 0.3s; 
+}
+.nav-links li a:hover {
+    color: #60adff; 
+    transform: translateY(-5px); 
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0; 
+    height: 2px;
+    background-color: #60adff; 
+    transition: width 0.3s ease; 
+}
+
+.nav-links li a:hover::after {
+    width: 100%; 
 }
 .product {
     background-size: cover;
