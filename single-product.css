@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    
+    color: #333;
+} 
+.container {
+    /* max-width: 1200px; */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    color: #000000;
+    padding: 15px 0;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+.logo{
+    display:flex;
+    max-width: 150px;
+}
+nav {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 10px;               
+    /* align-items:center; */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 30px; 
+    margin-top: 40px; 
+}
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+.product {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 51.8%;
+    margin-left: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 {
+    text-align: center;
+    background-color: #95A1A7;
+    width: 47%;
+    margin-left: 50px;
+    margin-top: -90px;
+    padding: 20px;
+}
+
+.container2 h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container3 {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 25.23%;
+    float: left;
+}
+.container4 {
+    height: 350px;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 23.4%;
+    background-color: #00baff;
+    float: left;
+}
+.container5 {
+    clear: both;
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+    float: left;
+    margin-left: 50px;
+    height: 350px;
+    width: 50.23%;
+}
+
+.text-and-button {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40%;
+}
+
+.text-and-button p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.order-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #000000;
+    border: line;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button i {
+    margin-left: 10px;
+}
+
+.order-button:hover {
+    background-color: #0088cc;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Space between image and text/button */
+    align-items: flex-start; /* Align items at the start */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .container3,
+    .container4 {
+        width: 100%;
+        height: 150px;
+    }
+}
